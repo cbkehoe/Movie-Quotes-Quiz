@@ -11,8 +11,3 @@ export default function Quote (props, user) {
 }
 
 
-<select id="select1">
-    <option value="free">Free</option>
-    <option value="basic">Basic</option>
-    <option value="premium">Premium</option>
-</select>
