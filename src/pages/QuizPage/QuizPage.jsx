@@ -1,19 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import AnswerForm from '../../components/Answer/Answer';
+import SignUpForm from '../../components/SignUpForm/SignUpForm';
 
 export default function QuizPage() {
   
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [quote, setQuote] = useState([]);
+    const [answerForm, setAnswerForm] = useState([])
   
     useEffect(() => {
         fetch("https://movie-quote-api.herokuapp.com/v1/quote/")
         .then(res => res.json())
         .then(
-            function (quote) {
+            function (quote, answer) {
             setIsLoaded('true');
             console.log(quote);
             setQuote(quote);
+            setAnswerForm(answer)
           },
             (error) => {
                 setIsLoaded('true');
@@ -33,13 +37,18 @@ export default function QuizPage() {
             <br></br>
           
           <p>{quote.quote}</p>
-          <input type="text" name="answer" />
-          <button type="submit">Submit Answer</button>
+          <br></br>
+
+          {/* <p>{answer.answer}</p> */}
+
           </>
         );
         }
     }
 
-async function winLose() {
+    
+
+// async function winLose() {
   
-}
+// }
+
