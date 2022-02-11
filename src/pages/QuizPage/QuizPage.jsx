@@ -60,17 +60,19 @@ export default function QuizPage() {
     <option value="Forrest Gump">Forrest Gump</option>
     <option value="Spiral From The Book Of Saw">Spiral From The Book Of Saw</option>
 </select>
-<button type="submit"  >Submit Answer</button>
+<button type="submit" onClick={() => handleWinLoss(quote.quote, quote.value)} >Submit Answer</button>
 </div>
+
 
           </>
         );
+        async function handleWinLoss(quote, value, show) {
+          if (value === quote.show) {
+            console.log("You Win!")
+          } else {
+            console.log("Sorry Wrong Answer")
+          }
         }
-    }
-
+        }
+    }    
     
-
-// async function winLose() {
-  
-// }
-
