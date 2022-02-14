@@ -1,6 +1,5 @@
 header {
   text-align: center;
-  background: url(https://i.imgur.com/TyJkMXi.jpg);
   background-size: cover;
   background-position: 50% 45%;
   color: green;
@@ -11,7 +10,7 @@ a {
 h1 {
   font-size: 70px;
 
-  color: rgba(87,6,93,.999);
+  color: rgba(1, 20, 109, 0.999);
   font-family: Impact;
   
 }
