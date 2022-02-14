@@ -1,0 +1,22 @@
+header {
+    text-align: center;
+    background: url(https://i.imgur.com/TyJkMXi.jpg);
+    background-size: cover;
+    background-position: 50% 45%;
+    color: white;
+  }
+  a {
+    color: white;
+  }
+  h1 {
+    font-size: 70px;
+
+    color: rgba(87,6,93,.999);
+    font-family: Impact;
+    
+  }
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black
+}
